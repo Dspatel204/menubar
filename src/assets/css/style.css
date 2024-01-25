@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Polaris-TextStyle--variationPositive {
+    color: #008060;
+}
+
+.Custom-Polaris-Icon__Svg {
+    fill: rgb(246, 146, 29);
+    padding: 5px
+}
+
+.price-chart-item .Polaris-Text--heading2xl {
+    font-size: 30px;
+    color: #0e76e5;
+    margin: 1rem 0 0;
+}
+
+.money {
+    font-weight: 450;
+}
+
+.price-chart-item .Polaris-ExceptionList {
+    text-align: left;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+}
+
+.price-chart-item .Polaris-Text--heading2xl em {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Polaris-Text--headingMd {
+    display: flex;
+}
+
+.price-chart-item .Polaris-ExceptionList .Polaris-ExceptionList__Item {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.pricing {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 725px;
+}
+
+.price-chart-item {
+    margin-top: 0rem !important;
+    float: left;
+    text-align: center;
+    width: 325px;
+}
+
+.heading-panel {
+    padding: 10px 15px;
+    color: #fff;
+    display: flex;
+    background-color: #008060;
+    border-color: #ddd !important;
+}
+
+.heading-panel,
+.Polaris-Text--headingMd {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.rightdown .Polaris-Button--variantPlain svg,
+.Polaris-Button--variantMonochromePlain svg {
+    fill: #000 !important;
+}
+
+.rightdown .Polaris-Button .Polaris-Icon {
+    width: 26px;
+    height: 26px;
+}
+
+.rightdown {
+    align-items: flex-end;
+}
+
+.price-chart-item .Polaris-ExceptionList__Icon svg {
+    fill: #008060;
+}
+
+.Polaris-Icon .cross-icon .Polaris-Icon__Svg {
+    fill: #ff0000
+}
+
+.headingbtn-end {
+    align-items: flex-end;
+}
+
+.headingbtn-end .Polaris-Button--variantPlain svg,
+.Polaris-Button--variantMonochromePlain svg {
+    fill: #fff !important;
+}
+
+.theme-img {
+    max-width: 100%;
+}
+
+/* .Polaris-ShadowBevel {
+    --pc-shadow-bevel-border-radius-xs: 0 !important;
+} */
+.task-bubble {
+    height: 20px;
+    width: 20px;
+    border: 2px dashed #999;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.task-completed {
+    border: none;
+    background-color: #222;
+}
+
+.task-bubble .Polaris-Icon svg {
+    fill: #fff;
+}
+
+.task-header {
+    cursor: pointer;
+}

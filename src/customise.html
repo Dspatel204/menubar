@@ -1,0 +1,366 @@
+<html>
+
+<body>
+
+
+  <div>
+    <!-- <Frame>
+      <Banner title="Note: Mobile Menu Bar will work htmlFor mobile devices only, Not htmlFor desktops."></Banner>
+      <Page fullWidth>
+        <Layout>
+          <Layout.Section variant="oneThird">
+            <Frame>
+              <Navigation location="/">
+                <BlockStack gap={400}>
+                  <Card>
+                    <ChoiceList title="Icon type" choices={[ { label: "icon" , value: "icon" }, { label: "image" ,
+                      value: "image" }, ]} selected={selected} onChange={handleChange} />
+                    <Checkbox label="Show Menu Name" checked={checked} onChange={handlecheckbox} />
+                  </Card>
+                  <Card>
+                    <Layout>
+                      <Layout.Section>
+                        <Text variant="headingLg" as="h2" fontWeight="medium">
+                          COLORS
+                        </Text>
+                      </Layout.Section>
+                      <Layout.Section>
+                        <div>
+                          <Label htmlhtmlFor="background_color" classNameName="Polaris-Label__Text">
+                            Background Color
+                          </Label>
+                        </div>
+                        <div>
+                          <Button onClick={handleButtonClick} />
+                          {colorPickerVisible && (
+                          <div style={{ position: "fixed" , marginLeft: "200px" }}>
+                            <ColorPicker onChange={handleColorChange} color={selectedColor} allowAlpha />
+                          </div>
+                          )}
+                        </div>
+                      </Layout.Section>
+                    </Layout>
+                  </Card>
+                </BlockStack>
+              </Navigation>
+            </Frame>
+          </Layout.Section>
+          <Layout.Section>
+            <BlockStack gap={400}>
+              <Card> </Card>
+            </BlockStack>
+          </Layout.Section>
+        </Layout>
+      </Page> */} -->
+      <div className="wrapper">
+        <div className="sidebar-wrapper">
+          <div className="sidebar-content">
+            <div className="sidebar-settingbar">
+              <ul className="settingbar-menu icons">
+                <li>
+                  <button className="store-design-icon store-icon" data-target="content1">
+                    <svg viewBox="0 0 20 20" className="" width="24px" height="24px" focusable="false"
+                      aria-hidden="true">
+                      <path
+                        d="M3.5 5.25c0-.966.784-1.75 1.75-1.75h1a.75.75 0 0 1 0 1.5h-1a.25.25 0 0 0-.25.25v1a.75.75 0 0 1-1.5 0v-1Z">
+                      </path>
+                      <path fillRule="evenodd"
+                        d="M3.5 9.25c0-.966.784-1.75 1.75-1.75h9.5c.966 0 1.75.784 1.75 1.75v1.5a1.75 1.75 0 0 1-1.75 1.75h-9.5a1.75 1.75 0 0 1-1.75-1.75v-1.5Zm1.75-.25a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25h-9.5Z">
+                      </path>
+                      <path
+                        d="M3.5 14.75c0 .966.784 1.75 1.75 1.75h1a.75.75 0 0 0 0-1.5h-1a.25.25 0 0 1-.25-.25v-1a.75.75 0 0 0-1.5 0v1Z">
+                      </path>
+                      <path
+                        d="M14.75 3.5c.966 0 1.75.784 1.75 1.75v1a.75.75 0 0 1-1.5 0v-1a.25.25 0 0 0-.25-.25h-1a.75.75 0 0 1 0-1.5h1Z">
+                      </path>
+                      <path
+                        d="M14.75 16.5a1.75 1.75 0 0 0 1.75-1.75v-1a.75.75 0 0 0-1.5 0v1a.25.25 0 0 1-.25.25h-1a.75.75 0 0 0 0 1.5h1Z">
+                      </path>
+                      <path d="M11.75 4.25a.75.75 0 0 1-.75.75h-2a.75.75 0 0 1 0-1.5h2a.75.75 0 0 1 .75.75Z"></path>
+                      <path d="M11 16.5a.75.75 0 0 0 0-1.5h-2a.75.75 0 0 0 0 1.5h2Z"></path>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button className="store-setting-icon store-icon" data-target="content2">
+                    <svg viewBox="0 0 20 20" className="" width="24px" height="24px" focusable="false"
+                      aria-hidden="true">
+                      <path fillRule="evenodd"
+                        d="M12.5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-1.5 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+                      <path fillRule="evenodd"
+                        d="M9.377 2.5c-.926 0-1.676.75-1.676 1.676v.688c0 .056-.043.17-.198.251-.153.08-.303.168-.448.262-.147.097-.268.076-.318.048l-.6-.346a1.676 1.676 0 0 0-2.29.613l-.622 1.08a1.676 1.676 0 0 0 .613 2.289l.648.374c.048.028.124.12.119.29a5.484 5.484 0 0 0 .005.465c.009.175-.07.27-.119.299l-.653.377a1.676 1.676 0 0 0-.613 2.29l.623 1.08a1.676 1.676 0 0 0 2.29.613l.7-.405c.048-.028.166-.048.312.043.115.071.233.139.353.202.155.08.198.195.198.251v.811c0 .926.75 1.676 1.676 1.676h1.246c.926 0 1.676-.75 1.676-1.676v-.81c0-.057.042-.171.197-.252.121-.063.239-.13.354-.202.146-.091.264-.07.312-.043l.7.405a1.676 1.676 0 0 0 2.29-.614l.623-1.08a1.676 1.676 0 0 0-.613-2.289l-.653-.377c-.05-.029-.128-.123-.119-.3a5.494 5.494 0 0 0 .005-.463c-.005-.171.07-.263.12-.291l.647-.374a1.676 1.676 0 0 0 .613-2.29l-.623-1.079a1.676 1.676 0 0 0-2.29-.613l-.6.346c-.049.028-.17.048-.318-.048a5.4 5.4 0 0 0-.448-.262c-.155-.081-.197-.195-.197-.251v-.688c0-.926-.75-1.676-1.676-1.676h-1.246Zm-.176 1.676c0-.097.078-.176.176-.176h1.246c.097 0 .176.079.176.176v.688c0 .728.462 1.298 1.003 1.58.11.058.219.122.323.19.517.337 1.25.458 1.888.09l.6-.346a.176.176 0 0 1 .24.064l.623 1.08a.176.176 0 0 1-.064.24l-.648.374c-.623.36-.888 1.034-.868 1.638a4.184 4.184 0 0 1-.004.337c-.032.615.23 1.31.867 1.677l.653.377a.176.176 0 0 1 .064.24l-.623 1.08a.176.176 0 0 1-.24.065l-.701-.405c-.624-.36-1.341-.251-1.855.069a3.91 3.91 0 0 1-.255.145c-.54.283-1.003.853-1.003 1.581v.811a.176.176 0 0 1-.176.176h-1.246a.176.176 0 0 1-.176-.176v-.81c0-.73-.462-1.3-1.003-1.582a3.873 3.873 0 0 1-.255-.146c-.514-.32-1.23-.428-1.855-.068l-.7.405a.176.176 0 0 1-.241-.065l-.623-1.08a.176.176 0 0 1 .064-.24l.653-.377c.637-.368.899-1.062.867-1.677a3.97 3.97 0 0 1-.004-.337c.02-.604-.245-1.278-.868-1.638l-.648-.374a.176.176 0 0 1-.064-.24l.623-1.08a.176.176 0 0 1 .24-.064l.6.346c.638.368 1.37.247 1.888-.09a3.85 3.85 0 0 1 .323-.19c.54-.282 1.003-.852 1.003-1.58v-.688Z">
+                      </path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <aside className="main-sidebar">
+              <div className="sidebar-inner" id="content1">
+                <div className="sidebar-nav">
+                  <h2 className="sidebar-title">Home page</h2>
+                </div>
+                <div className="main-sidebar-content">
+                  <div className="sidebar-top">
+                    <div className="content-heading">
+                      <h3>Header</h3>
+                    </div>
+                    <div className="card">
+                      <div className="card-body">
+                        <div className="card-title">
+                          <h4>Icon type</h4>
+                        </div>
+                        <div className="card-content">
+                          <ul className="input-button">
+                            <li>
+                              <input type="radio" id="icon" value="Icon" name="type" className="radio-button" />
+                              <label htmlFor="icon">Icon</label>
+                            </li>
+                            <li>
+                              <input type="radio" id="image" value="Image" name="type" className="radio-button" />
+                              <label htmlFor="image">Image</label>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <input type="checkbox" id="menu-name" name="menuName" className="checkbox-btn" />
+                              <label htmlFor="menu-name">
+                                {" "}
+                                Show Menu Name
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="sidebar-template">
+                    <div className="content-heading">
+                      <h3>Template</h3>
+                    </div>
+                    {/* <!-- accordion  start--> */}
+                    <div className="card">
+                      <div className="card-body">
+                        <div className="accordion">
+                          {allSections.map((item, index) => (
+                          <div key={index}>
+                            {index < 6 && ( <div className="item-at">
+                              <div className="title-at" onClick={toggleAccordion}>
+                                <h2>Menu {index + 1}</h2>
+                              </div>
+                              <div className="tab-at">
+                                <div className="accordion-content">
+                                  <div className="form-wrapper">
+                                    <label htmlFor="avatar" class="input-label">
+                                      Icon
+                                    </label>
+                                  </div>
+                                  <Modal size="large" activator={ <div className="file-wrapper htmlForm-input">
+                                    <input type="button" onClick={toggleActive} />
+                                    Choose Icon
+                                </div>
+                                }
+                                open={active}
+                                onClose={toggleActive}
+                                title="Choose Icon"
+                                >
+                                <Modal.Section>
+                                  <!-- <InlineGrid columns={13}>
+                                    {Object.keys(SVG_ICON).map(
+                                    (key, id) => (
+                                    <div className="icon-block" data-icon={id + 1} key={key} dangerouslySetInnerHTML={{
+                                      __html: SVG_ICON[key], }} onClick={()=>
+                                      handleicon(key)
+                                      }
+                                      />
+                                      )
+                                      )} -->
+                                  </InlineGrid>
+                                </Modal.Section>
+                                </Modal>
+                                <div className="form-wrapper">
+                                  <label htmlFor="name" className="input-label">
+                                    Name
+                                  </label>
+                                  <div className="form-input">
+                                    <input type="text" name="name" placeholder="Shop" />
+                                  </div>
+                                </div>
+                                <div className="form-wrapper">
+                                  <label htmlFor="link" className="input-label">
+                                    Link
+                                  </label>
+                                  <div className="form-input">
+                                    <input type="text" name="link" placeholder="/collections/all" />
+                                  </div>
+                                </div>
+                                <div className="form-wrapper">
+                                  <input type="checkbox" id="link-new-tab" className="checkbox-btn" />
+                                  <label htmlFor="link-new-tab">
+                                    Open link in a new tab
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        )}
+                      </div>
+                      <!-- ))} -->
+                      <div className="card-bottom">
+                        {/* <Button icon={CirclePlusMajor} variant="plain">
+                          Add section
+                        </Button> */}
+                        <a onClick={handleaddsection} className="add-section-link">
+                          <span>
+                            <svg viewBox="0 0 20 20" className="" width="20px" height="20px" focusable="false"
+                              fill="#005bd3" aria-hidden="true">
+                              <path
+                                d="M6.25 10a.75.75 0 0 1 .75-.75h2.25v-2.25a.75.75 0 0 1 1.5 0v2.25h2.25a.75.75 0 0 1 0 1.5h-2.25v2.25a.75.75 0 0 1-1.5 0v-2.25h-2.25a.75.75 0 0 1-.75-.75Z">
+                              </path>
+                              <path fillRule="evenodd"
+                                d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z">
+                              </path>
+                            </svg>
+                          </span>
+                          Add section
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div className="sidebar-inner theme-settings" id="content2">
+          <div className="sidebar-nav">
+            <h2 className="sidebar-title">Theme settings</h2>
+          </div>
+          <div className="main-sidebar-content">
+            <div className="sidebar-template">
+              {/* <!-- accordion  start--> */}
+              <div className="card">
+                <div className="card-body">
+                  <div className="accordion">
+                    <div className="item-at">
+                      <div className="title-at" onClick={toggleAccordion}>
+                        <h2>Color</h2>
+                      </div>
+                      <div className="tab-at">
+                        <div className="accordion-content">
+                          <div className="htmlForm-wrapper htmlForm-control">
+                            <label className="input-label">
+                              Background color
+                            </label>
+                            <div className="htmlForm-input">
+                              <input type="color" id="bg-color" name="bg-color" value="#e66465" />
+                            </div>
+                          </div>
+                          <div className="htmlForm-wrapper htmlForm-control">
+                            <label className="input-label">
+                              Border color
+                            </label>
+                            <div className="htmlForm-input">
+                              <input type="color" id="border-color" name="text-color" value="#e66465" />
+                            </div>
+                          </div>
+                          <div className="htmlForm-wrapper htmlForm-control">
+                            <label className="input-label">
+                              Icon color
+                            </label>
+                            <div className="htmlForm-input">
+                              <input type="color" id="icon-color" name="text-color" value="#e66465" />
+                            </div>
+                          </div>
+                          <div className="htmlForm-wrapper htmlForm-control">
+                            <label className="input-label">
+                              Text color
+                            </label>
+                            <div className="htmlForm-input">
+                              <input type="color" id="text-color" name="text-color" value="#e66465" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="item-at">
+                      <div className="title-at" onClick={toggleAccordion}>
+                        <h2>Custom css</h2>
+                      </div>
+                      <div className="tab-at">
+                        <div className="accordion-content">
+                          <div className="htmlForm-wrapper">
+                            <label className="input-label" htmlFor="custom-css">
+                              Custom css
+                            </label>
+                            <div className="htmlForm-input">
+                              <textarea name="custom-css" id="custom-css" cols="30" rows="10"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </aside>
+      </div>
+  </div>
+  <main className="page-wrapper">
+    <div className="page-content">
+      <div className="main-card">
+        <div className="preview-container">
+          <div className="top-bar"></div>
+          <div className="preview-container-inner">
+            <div className="mobile-menu-wrap">
+              <ul className="mobile-bar-nav">
+                <li className="nav-grid">
+                  <a href="https" className="nav-grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enableBackground="new 0 0 512 512" height="512"
+                      viewBox="0 0 512 512" width="512">
+                      <g>
+                        <path
+                          d="m509.86 167.949-46.062-76.771v-44.045c0-26.304-21.356-47.133-47.133-47.133h-321.334c-25.855 0-47.133 20.899-47.133 47.133v44.046l-46.062 76.77c-1.528 2.547-2.236 5.438-2.122 8.305v39.596c0 22.193 13.176 41.366 32.117 50.107v231.043c0 8.284 6.716 15 15 15h417.734c8.284 0 15-6.716 15-15v-231.036c18.948-8.737 32.133-27.916 32.133-50.114v-40.183c0-2.719-.739-5.386-2.138-7.718zm-39.355-7.282h-43.685l-20.134-50.334h33.618zm-392.307-113.533c0-9.55 7.759-17.134 17.133-17.134h321.333c9.33 0 17.133 7.543 17.133 17.134v33.199h-355.6v-33.199zm273.133 143.533h50.334v25.183c-1.377 33.357-48.961 33.366-50.334 0zm-2.703-30-10.066-50.334h35.814l20.134 50.334zm-77.622 30h50.325v25.183c-1.379 33.363-48.952 33.36-50.325 0zm-.008-30v-50.334h36.97l10.066 50.334zm-29.992 30v25.183c-1.377 33.359-48.961 33.365-50.333 0v-25.183zm-47.045-30 10.067-50.334h36.97v50.334zm-76.474 0 20.133-50.334h35.814l-10.067 50.334zm43.185 30v25.183c-1.379 33.362-48.952 33.361-50.325 0v-25.183zm-88.981-80.334h33.619l-20.133 50.334h-43.686zm-41.677 105.517v-25.183h50.333v25.183c-1.376 33.357-48.96 33.366-50.333 0zm355.584 266.15h-82.466v-146.733h82.466zm64.267 0h-34.268v-161.733c0-8.284-6.716-15-15-15h-112.465c-8.284 0-15 6.716-15 15v161.733h-211v-211.456c13.022-1.651 24.643-7.843 33.212-16.948 20.845 23.044 59.487 23.026 80.326.001 20.847 23.045 59.492 23.023 80.333-.001 20.845 23.044 59.486 23.026 80.326.001 20.847 23.045 59.492 23.022 80.333-.001 8.567 9.108 20.185 15.302 33.205 16.95v211.454zm32.133-266.15c-1.377 33.358-48.96 33.366-50.333 0v-25.183h50.333z">
+                        </path>
+                        <path
+                          d="m223.865 305.267h-112.467c-8.284 0-15 6.716-15 15v112.467c0 8.284 6.716 15 15 15h112.467c8.284 0 15-6.716 15-15v-112.467c0-8.285-6.716-15-15-15zm-15 112.466h-82.467v-82.467h82.467z">
+                        </path>
+                      </g>
+                    </svg>
+                    <span>shop</span>
+                  </a>
+                </li>
+                <li className="nav-grid">
+                  <a href="https" className="nav-grid-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="m480.871094 482v-247.386719c-5.199219 1.292969-10.632813 1.992188-16.230469 1.992188-21.035156 0-39.835937-9.726563-52.160156-24.917969-12.324219 15.1875-31.125 24.917969-52.160157 24.917969-21.035156 0-39.835937-9.726563-52.160156-24.917969-12.324218 15.1875-31.125 24.917969-52.160156 24.917969s-39.835938-9.726563-52.160156-24.917969c-12.324219 15.1875-31.125 24.917969-52.160156 24.917969-21.039063 0-39.835938-9.726563-52.160157-24.917969-12.324219 15.1875-31.125 24.917969-52.160156 24.917969-5.597656 0-11.03125-.699219-16.230469-1.992188v247.386719h-31.128906v30h512v-30zm-63.6875-80.164062c0 28.507812-23.195313 51.703124-51.703125 51.703124-23.296875 0-43.042969-15.488281-49.488281-36.703124h-119.984376c-6.445312 21.214843-26.191406 36.703124-49.488281 36.703124-28.507812 0-51.703125-23.195312-51.703125-51.703124 0-12.332032 4.460938-24.058594 12.136719-33.226563-7.675781-9.164063-12.136719-20.890625-12.136719-33.222656 0-28.507813 23.195313-51.703125 51.703125-51.703125 23.296875 0 43.042969 15.488281 49.488281 36.703125h119.984376c6.445312-21.214844 26.191406-36.703125 49.488281-36.703125 28.507812 0 51.703125 23.195312 51.703125 51.703125 0 12.332031-4.460938 24.058593-12.136719 33.222656 7.675781 9.167969 12.136719 20.898437 12.136719 33.226563zm0 0">
+                      </path>
+                      <path
+                        d="m387.183594 335.386719c0-11.964844-9.738282-21.703125-21.703125-21.703125-11.96875 0-21.703125 9.738281-21.703125 21.703125v15h-175.550782v-15c0-11.964844-9.738281-21.703125-21.707031-21.703125-11.964843 0-21.703125 9.738281-21.703125 21.703125 0 8.371093 4.902344 16.082031 12.484375 19.652343l28.847657 13.570313-28.84375 13.574219c-7.585938 3.570312-12.488282 11.28125-12.488282 19.652344 0 11.964843 9.738282 21.703124 21.703125 21.703124 11.96875 0 21.707031-9.738281 21.707031-21.703124v-15h175.550782v15c0 11.964843 9.734375 21.703124 21.703125 21.703124 11.964843 0 21.703125-9.738281 21.703125-21.703124 0-8.371094-4.902344-16.082032-12.484375-19.652344l-28.847657-13.574219 28.847657-13.570313c7.582031-3.570312 12.484375-11.28125 12.484375-19.652343zm0 0">
+                      </path>
+                      <path
+                        d="m47.355469 206.605469c20.492187 0 37.164062-16.667969 37.164062-37.160157v-42.019531h30v42.019531c0 20.488282 16.667969 37.160157 37.160157 37.160157 20.488281 0 37.160156-16.667969 37.160156-37.160157v-42.019531h30v42.019531c0 20.488282 16.667968 37.160157 37.160156 37.160157 20.488281 0 37.160156-16.667969 37.160156-37.160157v-42.019531h30v42.019531c0 20.488282 16.667969 37.160157 37.160156 37.160157 20.488282 0 37.160157-16.667969 37.160157-37.160157v-42.019531h30v42.019531c0 20.488282 16.671875 37.160157 37.160156 37.160157 20.492187 0 37.160156-16.667969 37.160156-37.160157v-40.128906l-33.132812-129.316406h-425.335938l-33.136719 129.316406v40.128906c0 20.492188 16.671876 37.160157 37.160157 37.160157zm0 0">
+                      </path>
+                    </svg>
+                    <span>Cart</span>
+                  </a>
+                </li>
+                <li className="nav-grid"></li>
+                <li className="nav-grid"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  </Frame>
+  </div>
+</body>
+
+</html>

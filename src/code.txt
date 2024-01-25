@@ -1,0 +1,29 @@
+/*   useEffect(() => {
+    const apiKey = "f4246f4aea53e858fef2c205265f525b"; // Replace with your app's API key
+    const redirectUri = "https://8bf4-103-240-79-230.ngrok-free.app"; // Replace with your app's redirect URI
+
+    // Check if the component is loaded with an authentication code
+
+    if (code) {
+      // If authentication code is present, exchange it for access token
+      Axios.post(`${config.api_endpoint}/new-generate-code`, {
+        shop,
+        code,
+      })
+        .then((response) => {
+          const accessToken = response.data.access_token;
+          // Store the accessToken securely (e.g., in a state or context)
+          console.log("Access Token:", response, accessToken);
+        })
+        .catch((error) => {
+          console.error("Error exchanging code for access token:", error);
+        });
+    } else {
+      // debugger;
+      // If no code, initiate the authentication process
+      // const redirect_url = `https://${shop}/admin/oauth/authorize?client_id=${apiKey}&scope=read_products&redirect_uri=${redirectUri}`;
+      // console.log("redirect_url", redirect_url);
+      // return false;
+      window.location.href = `https://${shop}/admin/oauth/authorize?client_id=${apiKey}&scope=read_products&redirect_uri=${redirectUri}`;
+    }
+  }, []); */

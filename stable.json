@@ -1,0 +1,50 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.jsx",
+  "dependencies": {
+    "@shopify/app": "^3.52.0",
+    "@shopify/app-bridge": "^3.7.9",
+    "@shopify/app-bridge-react": "^3.7.9",
+    "@shopify/polaris": "^12.6.0",
+    "@shopify/polaris-icons": "^7.13.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.0.9",
+    "loader-utils": "3.2.1",
+    "typescript": "4.4.2"
+  },
+  "webpack-scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "shopurl": "https://subscriptions.addigitech.com?shop=mobile-menu-bar-staging.myshopify.com&host=YWRtaW4uc2hvcGlmeS5jb20vc3RvcmUvbW9iaWxlLW1lbnUtYmFyLXN0YWdpbmc"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
